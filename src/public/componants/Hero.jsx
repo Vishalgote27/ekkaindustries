@@ -7,7 +7,7 @@ const Hero = () => {
     return <>
         <div className="w-full mt-16">
             <img
-                src="/public/ekkaindustries.png"
+                src="/ekkaindustries.png"
                 alt="Furniture Banner"
                 className="
             w-full 
