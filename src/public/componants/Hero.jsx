@@ -29,12 +29,22 @@ const Hero = () => {
             />
 
             {/* Image for larger screens (sm, md, lg, xl) */}
+            {/* <img
+                src="/heroekka.png"  
+                alt="Furniture Banner"
+                className="hidden sm:block w-full h-52 sm:h-80 md:h-96 lg:h-[30rem] xl:h-screen object-cover"  // Visible on larger screens (sm and up)
+            /> */}
             <img
                 src="/heroekka.png"  // Image for larger screens
                 alt="Furniture Banner"
-                className="hidden sm:block w-full h-52 sm:h-80 md:h-96 lg:h-[30rem] xl:h-[34rem] object-cover"  // Visible on larger screens (sm and up)
+                className="hidden sm:block w-full h-52 sm:h-80 md:h-96 lg:h-screen xl:h-screen object-cover"  // Visible on larger screens (sm and up)
             />
         </div>
+
+
+
+
+
 
 
         <AboutUs />
