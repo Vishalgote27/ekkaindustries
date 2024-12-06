@@ -19,7 +19,7 @@ const App = () => {
     <BrowserRouter>
       <Suspense fallback={<div>
         <div className="flex flex-row space-x-4 justify-center mt-11 md:mt-48  ">
-          <div className="w-12 h-12 rounded-full animate-spin border-8 border-dashed border-red-500 border-t-transparent">
+          <div className="w-12 h-12 rounded-full animate-spin border-8 border-dashed border-black border-t-transparent">
           </div>
         </div>
       </div>}>

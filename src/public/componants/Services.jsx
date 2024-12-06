@@ -46,31 +46,64 @@ const Services = () => {
     ];
 
     return <>
-        <section className="py-12 bg-gray-100">
-
+        <section className="py-16 bg-gray-100">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Our Products & Services</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Section Title */}
+                <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
+                    Our Products & Services
+                </h2>
+
+                {/* Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                            <div className="text-[#CA9B6B] mb-4">
-                                <service.icon className="w-12 h-12 mx-auto" />
+                        <div
+                            key={index}
+                            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300"
+                        >
+                            {/* Icon */}
+                            <div className="text-[#CA9B6B] mb-6 flex justify-center">
+                                <service.icon className="w-14 h-14" />
                             </div>
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-2">{service.title}</h3>
-                            <p className="text-gray-600">{service.description}</p>
+
+                            {/* Title */}
+                            <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                                {service.title}
+                            </h3>
+
+                            {/* Description */}
+                            <p className="text-gray-600 text-center leading-relaxed">
+                                {service.description}
+                            </p>
                         </div>
                     ))}
                 </div>
             </div>
         </section>
 
-        <section className="py-12">
-            <div className="container mx-auto text-center text-white">
-                <h3 className="text-4xl font-bold mb-4 text-black">Ready to Get Started?</h3>
-                <p className="mb-8 text-black">Contact us today for the best packaging solutions tailored to your needs.</p>
-                <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-[#CA9B6B] transition duration-300">Contact Us</button>
+
+        <section className="py-16 bg-white">
+            <div className="container mx-auto text-center">
+                {/* Heading */}
+                <h3 className="text-4xl font-extrabold mb-6 text-gray-800">
+                    Ready to Get Started?
+                </h3>
+
+                {/* Subtext */}
+                <p className="mb-8 text-lg text-gray-600">
+                    Contact us today for the best packaging solutions tailored to your needs.
+                </p>
+
+                {/* Button */}
+                <button className="bg-black text-white py-3 px-8 rounded-full hover:bg-gray-800 transition-all duration-300">
+                    Contact Us
+                </button>
             </div>
         </section>
+
+
+
+
+
 
 
     </>

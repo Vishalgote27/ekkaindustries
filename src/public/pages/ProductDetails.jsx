@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const ProductDetails = () => {
     const products = [
@@ -29,10 +29,10 @@ const ProductDetails = () => {
     return <>
         <div className="bg-gray-100 mt-16">
             {/* Hero Section */}
-            <div className="bg-[url('https://www.highway-logistics.co.uk/wp-content/uploads/2021/04/how_are_wooden_pallets_made.jpg')] bg-cover bg-center h-[250px] flex  justify-center">
+            <div className="bg-[url('https://www.highway-logistics.co.uk/wp-content/uploads/2021/04/how_are_wooden_pallets_made.jpg')] bg-cover bg-center h-[150px] sm:h-[200px] md:h-[220px]  flex justify-center">
                 <div className="text-center flex justify-center items-center bg-black bg-opacity-50 p-6 rounded-lg h-full w-full">
                     <h1 className="text-white text-2xl md:text-5xl font-bold mb-4">
-                        Premium Wooden Pallets for Every Need
+                        Product Details
                     </h1>
 
 
@@ -40,45 +40,54 @@ const ProductDetails = () => {
             </div>
 
             {/* Product Details Section */}
-            <div className="flex flex-col sm:flex-row justify-between items-center px-5 max-w-6xl mx-auto gap-8 py-10">
+            {/* Product Details Section */}
+            <div className="flex flex-col sm:flex-row justify-between items-center px-5 max-w-6xl mx-auto gap-12 py-14">
                 {/* Product Image */}
-                <div className="w-full md:w-1/2 h-[400px] flex items-center justify-center rounded-lg overflow-hidden shadow-lg">
+                <div className="w-full md:w-1/2 h-[400px] flex items-center justify-center rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover rounded-xl transform hover:scale-105 transition-transform duration-500"
                     />
                 </div>
 
                 {/* Product Info */}
-                <div className="w-full md:w-1/2 h-auto flex flex-col justify-center p-8 rounded-lg shadow-lg ">
-                    <h1 className="text-4xl font-semibold mb-4 text-gray-800">{product.name}</h1>
+                <div className="w-full md:w-1/2 h-auto flex flex-col justify-center p-8 rounded-xl ">
+                    <h1 className="text-4xl font-semibold text-gray-900 mb-4">{product.name}</h1>
                     <p className="text-lg text-gray-700 mb-6 leading-relaxed">{product.description}</p>
-                    <h3 className="text-xl font-semibold mb-2 text-gray-800">Specifications: </h3>
-                    <ul className="list-disc list-inside mb-4 text-gray-600">
-                        <li>Standard Size: 1200mm x 800mm</li>
-                        <li>Weight Capacity: 1500 kg</li>
-                        <li>Material: High-quality wood</li>
-                        <li>Used in shipping and warehousing</li>
-                    </ul>
-                    <button className="bg-black w-52 text-white py-2 px-4 rounded hover:bg-[#B59454] transition-all">
-                        Request a Quote
-                    </button>
 
+                    <div>
+                        <h3 className="text-xl font-semibold text-gray-800 mb-4">Specifications:</h3>
+                        <ul className="list-disc list-inside mb-6 text-gray-600">
+                            <li>Standard Size: 1200mm x 800mm</li>
+                            <li>Weight Capacity: 1500 kg</li>
+                            <li>Material: High-quality wood</li>
+                            <li>Used in shipping and warehousing</li>
+                        </ul>
+                    </div>
+
+                    <div className="flex items-center gap-4">
+                        <Link to="/contact" className="bg-black text-white w-52 py-3 px-6 rounded-lg hover:bg-[#B59454] transition-all duration-300 ease-in-out">
+                            Request a Quote
+                        </Link>
+
+                    </div>
                 </div>
             </div>
+
         </div>
 
         {/* Call-to-Action Section */}
-        <div className="bg-[#CA9B6B] py-12">
+        <div className=" py-12">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl font-bold text-white mb-6">Ready to Elevate Your Shipping?</h2>
-                <p className="text-lg text-gray-100 mb-8">Get in touch with us today to learn more about how our wooden pallets can help streamline your operations.</p>
-                <button className="bg-black text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-500 transition-all">
+                <h2 className="text-3xl font-bold text-black mb-6">Ready to Elevate Your Shipping?</h2>
+                <p className="text-lg text-black mb-8">Get in touch with us today to learn more about how our wooden pallets can help streamline your operations.</p>
+                <button className="bg-black text-white font-semibold py-3 px-6 rounded-lg">
                     Contact Us Today
                 </button>
             </div>
         </div>
+
 
 
     </>

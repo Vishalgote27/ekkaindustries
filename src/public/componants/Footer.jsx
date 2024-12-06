@@ -3,79 +3,90 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-800 text-white py-10">
-            <div className="container mx-auto px-5">
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5  gap-10">
+        <footer className="bg-black text-white py-12">
+            <div className="container mx-auto px-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10">
 
-                    {/* Links Section */}
+                    {/* Quick Links */}
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-                        <ul className="text-gray-400">
-                            <li><a href="/" className="hover:underline">Home</a></li>
-                            <li><a href="/about" className="hover:underline">About us</a></li>
-                            <li><a href="/allServices" className="hover:underline">Services</a></li>
-                            <li><a href="/contact" className="hover:underline">Contact Us</a></li>
+                        <ul className="space-y-2">
+                            <li>
+                                <a href="/" className="text-gray-400 hover:text-white transition-colors">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/about" className="text-gray-400 hover:text-white transition-colors">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/allServices" className="text-gray-400 hover:text-white transition-colors">
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                                    Contact Us
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    {/* About Section */}
+                    {/* Factory Address */}
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Factory Address</h3>
-                        <p className="text-gray-400">
-                            Gut No.12, Mirzapur Shivas, Tal.Gangapur, Jikthan, Waluj, Sambhajinagar Maharashtra - 431136
+                        <p className="text-gray-400 leading-relaxed">
+                            Gut No.12, Mirzapur Shivas, Tal.Gangapur, Jikthan, Waluj, Sambhajinagar, Maharashtra - 431136
                         </p>
                     </div>
 
-
-                    {/* Office Add */}
+                    {/* Office Address */}
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Office Address</h3>
-                        <p className="text-gray-400">
-                            Office No.1, Ground floor, Golden City Centre, Besides Prozone mall, Chikhalthana
+                        <p className="text-gray-400 leading-relaxed">
+                            Office No.1, Ground Floor, Golden City Centre, Besides Prozone Mall, Chikhalthana
                         </p>
                     </div>
 
-
-                    {/* Contact Section */}
+                    {/* Contact Info */}
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
                         <p className="text-gray-400">Chh. Sambhajinagar, Maharashtra</p>
-                        <p className="text-gray-400">ekkagroup.aurangabad@gmail.com</p>
+                        <p className="text-gray-400">Email: ekkagroup.aurangabad@gmail.com</p>
                         <p className="text-gray-400">Phone: +91 8767486600</p>
                     </div>
 
-
-                    {/* social media*/}
+                    {/* Social Media Links */}
                     <div>
-                        <h3 className="text-xl font-semibold mb-4 ">Social Media </h3>
-                        <div className="mt-6 flex  space-x-4">
-
-                            <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white">
-                                <FaFacebookF />
+                        <h3 className="text-xl font-semibold mb-4">Social Media</h3>
+                        <div className="flex space-x-4 mt-4">
+                            <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transition">
+                                <FaFacebookF size={24} />
                             </a>
-                            <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white">
-                                <FaTwitter />
+                            <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white transition">
+                                <FaTwitter size={24} />
                             </a>
-                            <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white">
-                                <FaInstagram />
+                            <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transition">
+                                <FaInstagram size={24} />
                             </a>
-                            <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-white">
-                                <FaLinkedinIn />
+                            <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition">
+                                <FaLinkedinIn size={24} />
                             </a>
                         </div>
                     </div>
-
-
                 </div>
 
-
-
                 {/* Copyright Section */}
-                <div className="mt-6 text-center text-gray-400">
-                    <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+                <div className="mt-10 text-center border-t border-gray-700 pt-6">
+                    <p className="text-gray-400 text-sm">
+                        &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
+
     );
 };
 

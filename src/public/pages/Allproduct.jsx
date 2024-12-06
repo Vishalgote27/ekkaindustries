@@ -20,18 +20,20 @@ const products = [
 ];
 const Allproduct = () => {
     return <>
-        <div className="mt-16 bg-[url('https://www.highway-logistics.co.uk/wp-content/uploads/2021/04/how_are_wooden_pallets_made.jpg')] bg-cover bg-center h-[250px] flex  justify-center">
+
+        <div className="mt-16 bg-[url('https://www.highway-logistics.co.uk/wp-content/uploads/2021/04/how_are_wooden_pallets_made.jpg')] bg-cover bg-center h-[150px] sm:h-[200px] md:h-[220px]  flex justify-center">
             <div className="text-center flex justify-center items-center bg-black bg-opacity-50 p-6 rounded-lg h-full w-full">
                 <h1 className="text-white text-2xl md:text-5xl font-bold mb-4">
                     Our Products
                 </h1>
-
-
             </div>
         </div>
+
+
+
         <section className="py-10  ">
             <div className="text-center mb-10 ">
-                <h2 className="text-4xl font-bold text-gray-800">Our Products</h2>
+                <h2 className="text-4xl font-bold text-gray-800">All Products</h2>
                 <p className="text-lg text-gray-600">Compliant with I.S.P.M.-15 Standards</p>
             </div>
 
@@ -69,7 +71,8 @@ const Allproduct = () => {
             <div className="container mx-auto text-center text-white">
                 <h3 className="text-4xl font-bold mb-4 text-black">Ready to Get Started?</h3>
                 <p className="mb-8 text-black">Contact us today for the best packaging solutions tailored to your needs.</p>
-                <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-[#CA9B6B] transition duration-300">Contact Us</button>
+
+                <Link to="/contact" className="bg-black text-white py-2 px-6 rounded-full hover:bg-[#CA9B6B] transition duration-300">Contact Us</Link>
             </div>
         </section>
 
