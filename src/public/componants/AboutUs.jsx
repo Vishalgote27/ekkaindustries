@@ -9,7 +9,7 @@ const AboutUs = () => {
                 {/* Left Side: Image */}
                 <div className="md:w-1/2 relative h-auto flex">
                     <img
-                        src="https://lirp.cdn-website.com/522a2511/dms3rep/multi/opt/GettyImages-459334475-1920w.jpg"
+                        src="/products/about.webp"
                         alt="About Us"
                         className="w-full h-auto relative z-10 rounded-md shadow-lg transform hover:scale-105 transition-transform duration-300 md:h-[400px]"
                     />

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaBalanceScale, FaBox, FaCogs, FaLightbulb, FaRecycle, FaShieldAlt, FaShippingFast } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const services = [
     {
@@ -79,7 +80,9 @@ const AllServices = () => {
             <div className="container mx-auto text-center text-white">
                 <h3 className="text-4xl font-bold mb-4 text-black">Ready to Get Started?</h3>
                 <p className="mb-8 text-black">Contact us today for the best packaging solutions tailored to your needs.</p>
-                <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-[#CA9B6B] transition duration-300">Contact Us</button>
+                <Link to="/contact">
+                    <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-[#CA9B6B] transition duration-300">Contact Us</button>
+                </Link>
             </div>
         </section>
     </>

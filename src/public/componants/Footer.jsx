@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -54,8 +55,10 @@ const Footer = () => {
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
                         <p className="text-gray-400">Chh. Sambhajinagar, Maharashtra</p>
-                        <p className="text-gray-400">Email: ekkagroup.aurangabad@gmail.com</p>
-                        <p className="text-gray-400">Phone: +91 8767486600</p>
+                        <p className="text-gray-400">Email:<a href="mailto:ekkagroup.aurangabad@gmail.com">ekkagroup.aurangabad@gmail.com</a></p>
+                        <p className="text-gray-400">Phone:<a href="tel:+8767486600" >+918767486600</a></p>
+                        {/* <p className="text-gray-400">Email: ekkagroup.aurangabad@gmail.com</p>
+                        <p className="text-gray-400">Phone: +91 8767486600</p> */}
                     </div>
 
                     {/* Social Media Links */}
@@ -80,9 +83,14 @@ const Footer = () => {
 
                 {/* Copyright Section */}
                 <div className="mt-10 text-center border-t border-gray-700 pt-6">
-                    <p className="text-gray-400 text-sm">
-                        &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
-                    </p>
+                    <div className="container mx-auto flex items-center justify-center">
+                        <div className="flex items-center sm:gap-5">
+                            <p>© 2024 - Ekka Industries | Designed & Developed by</p>
+                            <a href="https://techsuryaitsolution.com/" >
+                                <img src="/techsuryalogo.png" alt="techsurya" className="h-16 sm:h-11 mr-3" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

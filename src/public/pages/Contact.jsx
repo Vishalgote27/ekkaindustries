@@ -116,11 +116,11 @@ const Contact = () => {
                         </div>
                         <div className="flex items-center mb-4 text-gray-600">
                             <FaPhoneAlt className="text-[#CA9B6B] mr-4" />
-                            <p>+91 8767486600</p>
+                            <p className="">Phone:<a href="tel:+8767486600" >+918767486600</a></p>
                         </div>
                         <div className="flex items-center mb-4 text-gray-600">
                             <FaEnvelope className="text-[#CA9B6B] mr-4" />
-                            <p>ekkagroup.aurangabad@gmail.com</p>
+                            <p><a href="mailto:ekkagroup.aurangabad@gmail.com">ekkagroup.aurangabad@gmail.com</a></p>
                         </div>
 
                         <div className="mt-8">

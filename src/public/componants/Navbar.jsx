@@ -22,7 +22,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div>
                     <Link to="/" className="text-2xl font-bold">
-                        Ekaa
+                        Ekka
                     </Link>
                 </div>
 

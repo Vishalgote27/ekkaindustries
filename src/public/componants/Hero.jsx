@@ -33,9 +33,9 @@ const Hero = () => {
 
             {/* Image for larger screens (sm, md, lg, xl) */}
             <img
-                src="/heroekka.png"
+                src="/heroekka.jpg"
                 alt="Furniture Banner"
-                className="hidden sm:block w-full h-52 sm:h-80 md:h-[27rem] lg:h-[34rem] xl:h-[89vh] aspect-video object-cover"  // Visible on larger screens (sm and up)
+                className="hidden sm:block w-full h-52 sm:h-80 md:h-[27rem] lg:h-[34rem] xl:h-[88vh] aspect-video object-cover"  // Visible on larger screens (sm and up)
             />
 
 

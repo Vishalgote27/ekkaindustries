@@ -2,20 +2,22 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const products = [
-    { id: 1, name: "Euro Pallet", description: "Euro standard pallets", image: "http://woodenboxmanufacturerpune.com/images/products/wooden-pallets.jpg" },
-    { id: 2, name: "CP Pallet", description: "Manufacturer of Wooden Pallet", image: "https://www.woodpallets.co.in/web/images/portfolio/cp2pallet.jpg" },
-    { id: 3, name: "2 Way Pallet", description: "Custom Wooden Boxes", image: "https://5.imimg.com/data5/SELLER/Default/2021/6/JU/LQ/MM/112153184/two-way-wooden-pallet.jpg" },
-    { id: 4, name: "4 Way Pallet", description: "Custom Wooden Boxes", image: "https://timpack.co.nz/wp-content/uploads/2019/03/Partial1.png" },
-    { id: 5, name: "Pinewood Box", description: "Custom Wooden Boxes", image: "https://5.imimg.com/data5/SELLER/Default/2022/6/MS/PE/SH/25902065/pinewood-boxes-500x500-1000x1000.jpg" },
-    { id: 6, name: "Pine Wood Crate", description: "Supplier of Pine Wood Pallet", image: "https://www.woodpallets.co.in/web/images/PineWood%20Creat.gif" },
-    { id: 7, name: "Heat Treated Wooden", description: "Heat treated wooden pallet", image: "https://sawmillusa1.com/wp-content/uploads/2023/05/custom-pallerts-new-wooden-GFB-Pallets-1-1.png" },
-    { id: 8, name: "Heat Treated Pine Wood", description: "Heat treated wooden pallet", image: "https://5.imimg.com/data5/BF/GP/MY-13347636/pine-wood-500x500.jpg" },
-    { id: 9, name: "Cable Drum For Cable", description: "High quality plastic packaging", image: "https://timpack.co.nz/wp-content/uploads/2019/03/Cable1.png" },
-    { id: 10, name: "Wooden Pallet With Collar", description: "High quality plastic packaging", image: "https://5.imimg.com/data5/DL/LU/XQ/SELLER-96762746/pallet-collar-hinge-500x500-1000x1000.jpg" },
-    { id: 11, name: "Wooden Collar", description: "High quality plastic packaging", image: "https://www.biopack.be/media/catalog/product/cache/41b5db458861dd093d01d7dcd8f2756b/p/a/palop0001-houten-opzetranden-euro-formaat-biopack.jpg" },
-    { id: 12, name: "Wooden Pallet Collar", description: "High quality plastic packaging", image: "https://5.imimg.com/data5/JA/NH/WH/SELLER-135030/wooden-pallet-collars.jpg" },
-    { id: 13, name: "Red Pallet ", description: "High quality plastic packaging", image: "https://www.lpr.eu/app/uploads/sites/3/2023/12/100x120_00071-1024x683.jpg" },
-    { id: 14, name: "Blue Pallet ", description: "High quality plastic packaging", image: "https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/Catalogue/blue-mild-steel-pallet-for-construction-capacity-2-ton20230914110756.png" },
+    { id: 1, name: "Euro Pallet", description: "Euro standard pallets", image: "/products/eurowooden-pallets.jpg" },
+    { id: 2, name: "CP Pallet", description: "Manufacturer of Wooden Pallet", image: "/products/4wayPartial.png" },
+    { id: 3, name: "2 Way Pallet", description: "Custom Wooden Boxes", image: "/products/eurowooden-pallets.jpg" },
+    { id: 4, name: "4 Way Pallet", description: "Custom Wooden Boxes", image: "/products/4wayPartial.png" },
+    { id: 5, name: "Pinewood Box", description: "Custom Wooden Boxes", image: "/products/pinewood-boxes-500x500-1000x1000.webp" },
+    { id: 6, name: "Pine Wood Crate", description: "Supplier of Pine Wood Pallet", image: "/products/PineWood Creat.gif" },
+    { id: 7, name: "Heat Treated Wooden", description: "Heat treated wooden pallet", image: "/products/custom-pallerts-new-wooden-GFB-Pallets-1-1.png" },
+    { id: 8, name: "Heat Treated Pine Wood", description: "Heat treated wooden pallet", image: "/products/pine-wood-500x500.webp" },
+    { id: 9, name: "Cable Drum For Cable", description: "High quality plastic packaging", image: "/products/Cable1.png" },
+    { id: 10, name: "Wooden Pallet With Collar", description: "High quality plastic packaging", image: "/products/pallet-collar-hinge-500x500-1000x1000.jpg" },
+    { id: 11, name: "Wooden Collar", description: "High quality plastic packaging", image: "/products/palop0001-houten-opzetranden-euro-formaat-biopack.jpg" },
+    { id: 12, name: "Wooden Pallet Collar", description: "High quality plastic packaging", image: "/products/wooden-pallet-collars.jpg" },
+    { id: 13, name: "Red Pallet ", description: "High quality plastic packaging", image: "/products/redpallet.webp" },
+    { id: 14, name: "Blue Pallet ", description: "High quality plastic packaging", image: "/products/blue-mild-pallet.png" },
+    { id: 15, name: "Red Plastic Pallet ", description: "High quality plastic packaging", image: "/products/redplasticpallet.webp" },
+    { id: 16, name: "Blue Plastic Pallet ", description: "High quality plastic packaging", image: "/products/plasticbluepallet.webp" },
     // Add other products here
 ];
 const Allproduct = () => {

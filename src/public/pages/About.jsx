@@ -21,7 +21,7 @@ const About = () => {
                     {/* Left Image Section */}
                     <div className="md:w-1/2 mb-6 md:mb-0">
                         <img
-                            src="https://bmr-pallets.com/wp-content/uploads/Pallet-Kayu-Ekspor-1024x683.jpg"
+                            src="/products/aboutus.jpg"
                             alt="Wooden Pallet Manufacturing"
                             className="w-full h-96 object-cover rounded-md shadow-lg"
                         />
