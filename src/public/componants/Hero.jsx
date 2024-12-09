@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="w-full mt-16">
             {/* Image for mobile view */}
             <img
-                src="/mobileview.jpg"  // Image for mobile screens
+                src="/ekka_mobile-0001.jpg"  // Image for mobile screens
                 alt="Furniture Banner"
                 className="w-full h-auto sm:hidden object-cover"  // Visible on mobile only (hidden on sm and up)
             />
