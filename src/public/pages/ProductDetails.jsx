@@ -15,10 +15,10 @@ const ProductDetails = () => {
         { id: 10, name: "Wooden Pallet With Collar", description: "High quality plastic packaging", image: "/products/pallet-collar-hinge-500x500-1000x1000.jpg" },
         { id: 11, name: "Wooden Collar", description: "High quality plastic packaging", image: "/products/palop0001-houten-opzetranden-euro-formaat-biopack.jpg" },
         { id: 12, name: "Wooden Pallet Collar", description: "High quality plastic packaging", image: "/products/wooden-pallet-collars.jpg" },
-        { id: 13, name: "Red Pallet ", description: "High quality plastic packaging", image: "/products/redpallet.webp" },
-        { id: 14, name: "Blue Pallet ", description: "High quality plastic packaging", image: "/products/blue-mild-pallet.png" },
-        { id: 15, name: "Red Plastic Pallet ", description: "High quality plastic packaging", image: "/products/redplasticpallet.webp" },
-        { id: 16, name: "Blue Plastic Pallet ", description: "High quality plastic packaging", image: "/products/plasticbluepallet.webp" },
+        { id: 13, name: "Special Warehouse Red Pallet", description: "High quality plastic packaging", image: "/products/redpallet.webp" },
+        { id: 14, name: "Special Warehouse  Blue Pallet", description: "High quality plastic packaging", image: "/products/blueplastic-pallets.jpg" },
+        { id: 15, name: "Red Plastic Pallet ", description: "High quality plastic packaging", image: "/products/redplasticspallet.webp" },
+        { id: 16, name: "Blue Plastic Pallet ", description: "High quality plastic packaging", image: "/products/buleplasticpalletss.jpg" },
         // Add other products here
     ];
     const { id } = useParams(); // Get product ID from URL

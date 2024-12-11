@@ -31,7 +31,7 @@ const Contact = () => {
         });
     };
     return <>
-        <div className="mt-16 bg-[url('https://www.highway-logistics.co.uk/wp-content/uploads/2021/04/how_are_wooden_pallets_made.jpg')] bg-cover bg-center h-[150px] sm:h-[200px] md:h-[220px]  flex justify-center">
+        <div className="mt-16 bg-[url('https://www.highway-logistics.co.uk/wp-content/uploads/2021/04/how_are_wooden_pallets_made.jpg')] bg-cover bg-center h-[150px] sm:h-[200px] md:h-[220px]  flex justify-center ">
             <div className="text-center flex justify-center items-center bg-black bg-opacity-50 p-6 rounded-lg h-full w-full">
                 <h1 className="text-white text-2xl md:text-5xl font-bold mb-4">
                     Contact Us
@@ -119,8 +119,16 @@ const Contact = () => {
                             <p className="">Phone:<a href="tel:+8767486600" >+918767486600</a></p>
                         </div>
                         <div className="flex items-center mb-4 text-gray-600">
+                            <FaPhoneAlt className="text-[#CA9B6B] mr-4" />
+                            <p className="">Phone:<a href="tel:+8956237615" >+918956237615</a></p>
+                        </div>
+                        <div className="flex items-center mb-4 text-gray-600">
+                            <FaPhoneAlt className="text-[#CA9B6B] mr-4" />
+                            <p className="">Phone:<a href="tel:+8830279436" >+918830279436</a></p>
+                        </div>
+                        <div className="flex items-center mb-4 text-gray-600">
                             <FaEnvelope className="text-[#CA9B6B] mr-4" />
-                            <p><a href="mailto:ekkagroup.aurangabad@gmail.com">ekkagroup.aurangabad@gmail.com</a></p>
+                            <p><a href="mailto:ekaagroup.aurangabad@gmail.com">ekaagroup.aurangabad@gmail.com</a></p>
                         </div>
 
                         <div className="mt-8">

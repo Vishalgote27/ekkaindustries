@@ -81,24 +81,7 @@ const Services = () => {
         </section>
 
 
-        <section className="py-16 bg-white">
-            <div className="container mx-auto text-center">
-                {/* Heading */}
-                <h3 className="text-4xl font-extrabold mb-6 text-gray-800">
-                    Ready to Get Started?
-                </h3>
 
-                {/* Subtext */}
-                <p className="mb-8 text-lg text-gray-600">
-                    Contact us today for the best packaging solutions tailored to your needs.
-                </p>
-
-                {/* Button */}
-                <button className="bg-black text-white py-3 px-8 rounded-full hover:bg-gray-800 transition-all duration-300">
-                    Contact Us
-                </button>
-            </div>
-        </section>
 
 
 

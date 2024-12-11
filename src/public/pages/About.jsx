@@ -9,7 +9,7 @@ const About = () => {
             <div className="mt-16 bg-[url('https://www.highway-logistics.co.uk/wp-content/uploads/2021/04/how_are_wooden_pallets_made.jpg')] bg-cover bg-center h-[150px] sm:h-[200px] md:h-[220px]  flex justify-center">
                 <div className="text-center flex justify-center items-center bg-black bg-opacity-50 p-6 rounded-lg h-full w-full">
                     <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
-                        About Ekka Industries
+                        About Ekaa Industries
                     </h1>
                 </div>
             </div>
@@ -21,9 +21,10 @@ const About = () => {
                     {/* Left Image Section */}
                     <div className="md:w-1/2 mb-6 md:mb-0">
                         <img
-                            src="/products/aboutus.jpg"
+                            src="/WhatsApp Image 2024-12-11 at 16.06.04_d0ab96f9.jpg"
+                            // src="/products/aboutus.jpg"
                             alt="Wooden Pallet Manufacturing"
-                            className="w-full h-96 object-cover rounded-md shadow-lg"
+                            className="w-full h-auto object-cover rounded-md shadow-lg"
                         />
                     </div>
 
